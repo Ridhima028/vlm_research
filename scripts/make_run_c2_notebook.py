@@ -114,6 +114,7 @@ missing = [j for j in jobs if not j["image"].exists()]
 print(f"{len(jobs)} jobs | {len(done)} already done | {len(todo)} to run | {len(missing)} missing images")"""),
 
     ("code", """import torch
+import transformers
 from PIL import Image
 from transformers import AutoProcessor, BitsAndBytesConfig
 

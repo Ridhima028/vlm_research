@@ -1,0 +1,14 @@
+{
+  "model": "llava",
+  "model_id": "llava-hf/llava-1.5-7b-hf",
+  "transformers": "4.46.3",
+  "torch": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "date_utc": "2026-10-27T15:35:33+00:00",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 5
+  },
+  "quantization": "4-bit NF4, double quant, fp16 compute",
+  "total_jobs": 1050
+}

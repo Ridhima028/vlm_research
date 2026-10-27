@@ -1,0 +1,9 @@
+model,model_name,prompt_id,n,yes_count,no_count,other_count,yes_rate_pct,no_rate_pct,other_rate_pct,mean_response_words
+llava,LLaVA-1.5-7B,direct,150,3,147,0,2.0,98.0,0.0,1.0
+qwen,Qwen2.5-VL-7B,direct,150,5,145,0,3.333,96.667,0.0,1.0
+llava,LLaVA-1.5-7B,evidence,150,0,150,0,0.0,100.0,0.0,1.0
+qwen,Qwen2.5-VL-7B,evidence,150,12,138,0,8.0,92.0,0.0,1.0
+llava,LLaVA-1.5-7B,conservative,150,0,150,0,0.0,100.0,0.0,1.0
+qwen,Qwen2.5-VL-7B,conservative,150,0,150,0,0.0,100.0,0.0,1.0
+llava,LLaVA-1.5-7B,leading_damage,150,0,0,150,0.0,0.0,100.0,49.01
+qwen,Qwen2.5-VL-7B,leading_damage,150,0,0,150,0.0,0.0,100.0,56.53

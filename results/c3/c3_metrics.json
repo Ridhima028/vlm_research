@@ -1,0 +1,142 @@
+{
+  "experiment": "C3 prompt comparison on dry tiles",
+  "interpretation": "For binary prompts, yes_rate_pct is the observed share of explicit Yes responses on dry tiles (a false-alarm proxy). For leading_damage, the yes/no/other parser is not a semantic hallucination classifier.",
+  "models": {
+    "qwen": {
+      "model_name": "Qwen2.5-VL-7B",
+      "total_unique_jobs": 600,
+      "prompt_ids": [
+        "conservative",
+        "direct",
+        "evidence",
+        "leading_damage"
+      ],
+      "answer_type_counts": {
+        "no": 433,
+        "other": 150,
+        "yes": 17
+      }
+    },
+    "llava": {
+      "model_name": "LLaVA-1.5-7B",
+      "total_unique_jobs": 600,
+      "prompt_ids": [
+        "conservative",
+        "direct",
+        "evidence",
+        "leading_damage"
+      ],
+      "answer_type_counts": {
+        "no": 447,
+        "other": 150,
+        "yes": 3
+      }
+    }
+  },
+  "prompt_results": [
+    {
+      "model": "llava",
+      "model_name": "LLaVA-1.5-7B",
+      "prompt_id": "direct",
+      "n": 150,
+      "yes_count": 3,
+      "no_count": 147,
+      "other_count": 0,
+      "yes_rate_pct": 2.0,
+      "no_rate_pct": 98.0,
+      "other_rate_pct": 0.0,
+      "mean_response_words": 1.0
+    },
+    {
+      "model": "qwen",
+      "model_name": "Qwen2.5-VL-7B",
+      "prompt_id": "direct",
+      "n": 150,
+      "yes_count": 5,
+      "no_count": 145,
+      "other_count": 0,
+      "yes_rate_pct": 3.333,
+      "no_rate_pct": 96.667,
+      "other_rate_pct": 0.0,
+      "mean_response_words": 1.0
+    },
+    {
+      "model": "llava",
+      "model_name": "LLaVA-1.5-7B",
+      "prompt_id": "evidence",
+      "n": 150,
+      "yes_count": 0,
+      "no_count": 150,
+      "other_count": 0,
+      "yes_rate_pct": 0.0,
+      "no_rate_pct": 100.0,
+      "other_rate_pct": 0.0,
+      "mean_response_words": 1.0
+    },
+    {
+      "model": "qwen",
+      "model_name": "Qwen2.5-VL-7B",
+      "prompt_id": "evidence",
+      "n": 150,
+      "yes_count": 12,
+      "no_count": 138,
+      "other_count": 0,
+      "yes_rate_pct": 8.0,
+      "no_rate_pct": 92.0,
+      "other_rate_pct": 0.0,
+      "mean_response_words": 1.0
+    },
+    {
+      "model": "llava",
+      "model_name": "LLaVA-1.5-7B",
+      "prompt_id": "conservative",
+      "n": 150,
+      "yes_count": 0,
+      "no_count": 150,
+      "other_count": 0,
+      "yes_rate_pct": 0.0,
+      "no_rate_pct": 100.0,
+      "other_rate_pct": 0.0,
+      "mean_response_words": 1.0
+    },
+    {
+      "model": "qwen",
+      "model_name": "Qwen2.5-VL-7B",
+      "prompt_id": "conservative",
+      "n": 150,
+      "yes_count": 0,
+      "no_count": 150,
+      "other_count": 0,
+      "yes_rate_pct": 0.0,
+      "no_rate_pct": 100.0,
+      "other_rate_pct": 0.0,
+      "mean_response_words": 1.0
+    },
+    {
+      "model": "llava",
+      "model_name": "LLaVA-1.5-7B",
+      "prompt_id": "leading_damage",
+      "n": 150,
+      "yes_count": 0,
+      "no_count": 0,
+      "other_count": 150,
+      "yes_rate_pct": 0.0,
+      "no_rate_pct": 0.0,
+      "other_rate_pct": 100.0,
+      "mean_response_words": 49.01
+    },
+    {
+      "model": "qwen",
+      "model_name": "Qwen2.5-VL-7B",
+      "prompt_id": "leading_damage",
+      "n": 150,
+      "yes_count": 0,
+      "no_count": 0,
+      "other_count": 150,
+      "yes_rate_pct": 0.0,
+      "no_rate_pct": 0.0,
+      "other_rate_pct": 100.0,
+      "mean_response_words": 56.53
+    }
+  ]
+}

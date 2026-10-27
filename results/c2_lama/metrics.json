@@ -1,0 +1,182 @@
+{
+  "qwen": {
+    "model_name": "Qwen2.5-VL-7B",
+    "baseline_camouflage": {
+      "status": "completed",
+      "n_pairs": 150,
+      "before_yes_rate": 25.3,
+      "after_yes_rate": 29.3,
+      "persistence": {
+        "numerator": 22,
+        "denominator": 38,
+        "rate": 57.9,
+        "ci95": [
+          42.4,
+          73.7
+        ]
+      },
+      "switch_to_yes": {
+        "numerator": 22,
+        "denominator": 112,
+        "rate": 19.6,
+        "ci95": [
+          12.1,
+          28.3
+        ]
+      },
+      "mcnemar": {
+        "b_yes_to_no": 16,
+        "c_no_to_yes": 22,
+        "p_value": 0.417692190836533
+      }
+    },
+    "lama_inpainting": {
+      "status": "completed",
+      "n_pairs": 150,
+      "before_yes_rate": 25.3,
+      "after_yes_rate": 22.7,
+      "persistence": {
+        "numerator": 23,
+        "denominator": 38,
+        "rate": 60.5,
+        "ci95": [
+          44.7,
+          76.9
+        ]
+      },
+      "switch_to_yes": {
+        "numerator": 11,
+        "denominator": 112,
+        "rate": 9.8,
+        "ci95": [
+          4.7,
+          15.5
+        ]
+      },
+      "mcnemar": {
+        "b_yes_to_no": 15,
+        "c_no_to_yes": 11,
+        "p_value": 0.557197093963623
+      }
+    },
+    "c1_area_matched_control": {
+      "status": "completed",
+      "n_pairs": 6,
+      "before_yes_rate": 0.0,
+      "after_yes_rate": 0.0,
+      "persistence": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "ci95": [
+          null,
+          null
+        ]
+      },
+      "switch_to_yes": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "mcnemar": {
+        "b_yes_to_no": 0,
+        "c_no_to_yes": 0,
+        "p_value": 1.0
+      }
+    }
+  },
+  "llava": {
+    "model_name": "LLaVA-1.5-7B",
+    "baseline_camouflage": {
+      "status": "completed",
+      "n_pairs": 150,
+      "before_yes_rate": 40.7,
+      "after_yes_rate": 30.7,
+      "persistence": {
+        "numerator": 40,
+        "denominator": 61,
+        "rate": 65.6,
+        "ci95": [
+          52.4,
+          78.0
+        ]
+      },
+      "switch_to_yes": {
+        "numerator": 6,
+        "denominator": 89,
+        "rate": 6.7,
+        "ci95": [
+          2.2,
+          12.4
+        ]
+      },
+      "mcnemar": {
+        "b_yes_to_no": 21,
+        "c_no_to_yes": 6,
+        "p_value": 0.005924612283706665
+      }
+    },
+    "lama_inpainting": {
+      "status": "completed",
+      "n_pairs": 150,
+      "before_yes_rate": 40.7,
+      "after_yes_rate": 37.3,
+      "persistence": {
+        "numerator": 44,
+        "denominator": 61,
+        "rate": 72.1,
+        "ci95": [
+          59.3,
+          83.1
+        ]
+      },
+      "switch_to_yes": {
+        "numerator": 12,
+        "denominator": 89,
+        "rate": 13.5,
+        "ci95": [
+          6.2,
+          21.6
+        ]
+      },
+      "mcnemar": {
+        "b_yes_to_no": 17,
+        "c_no_to_yes": 12,
+        "p_value": 0.45825831964612007
+      }
+    },
+    "c1_area_matched_control": {
+      "status": "completed",
+      "n_pairs": 6,
+      "before_yes_rate": 33.3,
+      "after_yes_rate": 33.3,
+      "persistence": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 100.0,
+        "ci95": [
+          100.0,
+          100.0
+        ]
+      },
+      "switch_to_yes": {
+        "numerator": 0,
+        "denominator": 4,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "mcnemar": {
+        "b_yes_to_no": 0,
+        "c_no_to_yes": 0,
+        "p_value": 1.0
+      }
+    }
+  }
+}
